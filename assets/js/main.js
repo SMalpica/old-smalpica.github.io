@@ -25,6 +25,7 @@ function saveTaskData() {
 		//if(blockIndex==1 && imageIndex==15){
 		//}
 		data = trialSurvey.collectData();
+		//$('#trial-survey').load("assets/html/trial_survey.html");
     }
     //if (config.meta.aggregate) {
     //    $.extend(state.taskOutputs, data);
