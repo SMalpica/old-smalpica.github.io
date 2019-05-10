@@ -495,6 +495,7 @@ function preloadImages(data) {
   $("#img-cross").attr("src", FIXATION_CROSS);
   data.forEach(function(e, i) {
     e.firstblock.images.forEach(function(imgPath, j){
+		console.log("image path: "imgPath);
 		IMAGES[i*PARAMS.NUM_IMGS_BLOCK*2+j].src =  imgPath;
 	});
 	e.secondblock.images.forEach(function(imgPath, j){
@@ -578,7 +579,7 @@ function onAllImagesLoaded(imgs, progressCallback, callback) {
   }
 
   var errorHandler = function(event) {
-    console.log("Error!");
+    console.log("Error! ");
   }
 
   imgs.forEach(function(elt, i) {
