@@ -52,6 +52,16 @@ var trialSurvey = {
         //});
 	},
 	collectData: function() {
+		document.getElementById("firstblock").checked = false;
+		document.getElementById("secondblock").checked = false;
+		document.getElementById("confidence1").checked = false;
+		document.getElementById("confidence2").checked = false;
+		document.getElementById("confidence3").checked = false;
+		document.getElementById("confidence4").checked = false;
+		document.getElementById("confidence5").checked = false;
+		document.getElementById("confidence6").checked = false;
+		document.getElementById("confidence7").checked = false;
+		
 	    var blockAnswer = $("input[type=radio][name=blockAnswer]:checked").val();
 	    var confidence = $("input[type=radio][name=confidence]:checked").val();
 	    var estimation1 = htmlEscape($("textarea[name=estimationBlock1]").val());
