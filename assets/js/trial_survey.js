@@ -67,8 +67,8 @@ var trialSurvey = {
 	    var estimation1 = htmlEscape($("textarea[name=estimationBlock1]").val());
 		var estimation2 = htmlEscape($("textarea[name=estimationBlock2]").val());
 		
-		$("input[type=radio][name=blockAnswer]:checked").val("");
-	    $("input[type=radio][name=confidence]:checked").val("");
+		$("input[type=radio][name=blockAnswer]:checked").removeAttr("checked");
+	    $("input[type=radio][name=confidence]:checked").removeAttr("checked");
 	    $("textarea[name=estimationBlock1]").val("");
 		$("textarea[name=estimationBlock2]").val("");
 
