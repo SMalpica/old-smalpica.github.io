@@ -154,7 +154,7 @@ var custom = {
       }
     }
 
-	console.log("image index: ",imageIndex,", block index: ",blockIndex,", taskIndex: ",taskIndex);
+	//console.log("image index: ",imageIndex,", block index: ",blockIndex,", taskIndex: ",taskIndex);
 
     $(".subtask").hide();
     $('#next-button').hide(); // Hide the next button; we will handle control flow for this task

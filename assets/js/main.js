@@ -94,7 +94,7 @@ function updateTask() {
 }
 
 function nextTask() {
-	console.log("moving to next task");
+	//console.log("moving to next task");
     if (state.taskIndex < (config.meta.numSubtasks + config.advanced.includeDemographicSurvey) - 1) {
         //TODO: change this numbers (15, 1) for config.meta.params
 		if(state.imageIndex<15){
@@ -429,7 +429,7 @@ $(document).ready(function() {
 				state.outlierNumber++;
 				state.pressDuringThisTrial++;
 				
-				console.log("press detected ",state.pressDuringThisTrial);
+				//console.log("press detected ",state.pressDuringThisTrial);
 			}
 		});
     });
