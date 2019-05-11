@@ -80,6 +80,8 @@ var trialSurvey = {
 	    $("textarea[name=estimationBlock1]").val("");
 		$("textarea[name=estimationBlock2]").val("");
 
+		console.log("patata1")
+
 	    var data = {
 	        blockAnswer: blockAnswer,
 			confidence: confidence,
