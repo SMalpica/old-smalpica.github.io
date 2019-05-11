@@ -67,20 +67,22 @@ var trialSurvey = {
 	    var estimation1 = htmlEscape($("textarea[name=estimationBlock1]").val());
 		var estimation2 = htmlEscape($("textarea[name=estimationBlock2]").val());
 		
-		$("#firstBlock").removeAttr("checked");
-		$("#secondBlock").removeAttr("checked");
-		$("#confidence1").removeAttr("checked");
-		$("#confidence2").removeAttr("checked");
-		$("#confidence3").removeAttr("checked");
-		$("#confidence4").removeAttr("checked");
-		$("#confidence5").removeAttr("checked");
-		$("#confidence6").removeAttr("checked");
-		$("#confidence7").removeAttr("checked");
+		//$("#select_all").prop('checked', false)
+		
+		$("#firstBlock").prop('checked', false);
+		$("#secondBlock").prop('checked', false);
+		$("#confidence1").prop('checked', false);
+		$("#confidence2").prop('checked', false);
+		$("#confidence3").prop('checked', false);
+		$("#confidence4").prop('checked', false);
+		$("#confidence5").prop('checked', false);
+		$("#confidence6").prop('checked', false);
+		$("#confidence7").prop('checked', false);
 	    //$("input[type=radio][name=confidence]:checked").removeAttr("checked");
 	    $("textarea[name=estimationBlock1]").val("");
 		$("textarea[name=estimationBlock2]").val("");
 
-		console.log("patata1")
+		console.log("patata2")
 
 	    var data = {
 	        blockAnswer: blockAnswer,
