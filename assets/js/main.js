@@ -203,7 +203,7 @@ function addHiddenField(form, name, value) {
 
 function submitHIT() {
     console.log("submitting1623");
-
+	console.log(state.assignmentId);
     $("#copy-key-button").click(function() {
         selectText('submit-code');
     }); 

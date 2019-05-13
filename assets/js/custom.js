@@ -13,7 +13,7 @@ var PARAMS = {
   IMG_HEIGHT: 700 , // max img height
 
   N_BUCKETS: 1,
-  N_SUBJ_FILES: 3,
+  N_SUBJ_FILES: 1,
   
   NUM_IMGS_BLOCK: 15,
   NUM_BLOCKS_TRIAL: 2,
@@ -100,8 +100,8 @@ var custom = {
     });
 
     BUCKET_NUM = gupOrRandom("bucket", PARAMS.N_BUCKETS);
-    //SUBJ_ID = gupOrRandom("subj", PARAMS.N_SUBJ_FILES);
-	SUBJ_ID=24;	//TODO: volver a cambiar
+    SUBJ_ID = gupOrRandom("subj", PARAMS.N_SUBJ_FILES);
+	//SUBJ_ID=24;	//TODO: volver a cambiar
     console.log("Bucket", BUCKET_NUM, "subjId", SUBJ_ID);
       SUBJ_FILE_PATH = SUBJECT_FILES_BASE_PATH + "bucket" + BUCKET_NUM + "/subject_file_" + SUBJ_ID + ".json";
 
