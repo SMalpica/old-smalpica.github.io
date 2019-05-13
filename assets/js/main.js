@@ -364,10 +364,10 @@ function mturkSubmit(submitUrl, results) {
     // if (DEBUG) {
     //     return;
     // }
-    $("#submit-form").submit();
-    $("#submit-button").removeClass("loading");
-    generateMessage("positive", "Thanks! Your task was submitted successfully.");
-    $("#submit-button").addClass("disabled");
+    //$("#submit-form").submit();
+    //$("#submit-button").removeClass("loading");
+    //generateMessage("positive", "Thanks! Your task was submitted successfully.");
+    //$("#submit-button").addClass("disabled");
 }
 
 // submit to a customized back-end. 
