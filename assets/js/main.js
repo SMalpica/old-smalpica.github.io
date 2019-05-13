@@ -355,6 +355,9 @@ function mturkSubmit(submitUrl, results) {
     addHiddenField(form, 'workerId', state.workerId);
     addHiddenField(form, 'results', JSON.stringify(results));
     addHiddenField(form, 'feedback', $("#feedback-input").val());
+	console.log(form);
+	console.log(state.assignmentId);
+	console.log(state.workerId);
 
     $("#submit-form").attr("action", submitUrl); 
     $("#submit-form").attr("method", "POST"); 

@@ -18,7 +18,7 @@
     "advanced": {
         "includeDemographicSurvey": true,
         "hideIfNotAccepted": true,
-        "externalSubmit": true,
-        "externalSubmitUrl": "https://workersandbox.mturk.com/mturk/externalSubmit"
+        "externalSubmit": false,
+        "externalSubmitUrl": ""
     }
 }
