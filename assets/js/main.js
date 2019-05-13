@@ -207,7 +207,13 @@ function submitHIT() {
     $("#copy-key-button").click(function() {
         selectText('submit-code');
     }); 
-
+	
+	//const MTURK_SUBMIT = "https://www.mturk.com/mturk/externalSubmit";
+	//const SANDBOX_SUBMIT = "https://workersandbox.mturk.com/mturk/externalSubmit";
+	
+	var submitUrl = "https://workersandbox.mturk.com/mturk/externalSubmit";
+	console.log("submitUrl", submitUrl);
+	
     saveTaskData();
     clearMessage();
     $("#submit-button").addClass("loading");
@@ -237,14 +243,41 @@ function submitHIT() {
         'results': results
     }
 
-    var submitUrl;
-    if (config.advanced.externalSubmit) {
-        submitUrl = config.advanced.externalSubmitUrl;
-        externalSubmit(submitUrl, payload);
-    } else {
-        submitUrl = decodeURIComponent(gup("turkSubmitTo")) + "/mturk/externalSubmit";
-        mturkSubmit(submitUrl, payload);
-    }
+    //var submitUrl;
+    //if (config.advanced.externalSubmit) {
+    //    submitUrl = config.advanced.externalSubmitUrl;
+    //    externalSubmit(submitUrl, payload);
+    //} else {
+    //    submitUrl = decodeURIComponent(gup("turkSubmitTo")) + "/mturk/externalSubmit";
+    //    mturkSubmit(submitUrl, payload);
+    //}
+	//var form = $("#submit-form");
+    //addHiddenField(form, 'assignmentId', state.assignmentId);
+    //addHiddenField(form, 'workerId', state.workerId);
+    //addHiddenField(form, 'results', JSON.stringify(results));
+    //addHiddenField(form, 'feedback', $("#feedback-input").val());
+
+	
+	
+	console.log("results", results);
+	addHiddenField(form, 'assignmentId', state.assignmentId);
+    addHiddenField(form, 'workerId', state.workerId);
+    addHiddenField(form, 'results', JSON.stringify(payload));
+    addHiddenField(form, 'feedback', $("#feedback-input").val());
+	$("#submit-form").attr("action", submitUrl); 
+    $("#submit-form").attr("method", "POST"); 
+    $("#submit-form").submit();
+	
+	console.log(form);
+	console.log(state.assignmentId);
+	console.log(state.workerId);
+
+    $("#submit-button").removeClass("loading");
+    generateMessage("positive", "Thanks! Your task was submitted successfully.");
+    $("#submit-button").addClass("disabled");
+	
+	key = "mturk_key_" + state.workerId + "_" + state.assignmentId+"_"+new Date().getTime();
+    showSubmitKey(key);
 }
 
 function cancelSubmit(err) {

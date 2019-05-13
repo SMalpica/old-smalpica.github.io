@@ -345,6 +345,7 @@ function showImage(taskInput, taskIndex, imageIndex, blockIndex, taskOutput) {
   //console.log("show image",taskIndex,blockIndex,imageIndex)
   $('.subtask').hide();
   $("#next-button").hide();
+  console.log("task index: ",taskIndex);
   var imgFile = IMAGES[taskIndex*PARAMS.NUM_IMGS_BLOCK*2+blockIndex*PARAMS.NUM_IMGS_BLOCK+imageIndex].src;
   //console.log(imgFile)
   $("#img-main").attr("src", imgFile);
