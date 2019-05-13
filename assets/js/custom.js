@@ -606,7 +606,8 @@ function _enable(button) {
 
 function isTutorial(subtask) {
   /* Checks if `subtask` is part of the tutorial or not. */
-  return subtask.flag == "tutorial_real" || subtask.flag == "tutorial_sentinel";
+  //return subtask.flag == "tutorial_real" || subtask.flag == "tutorial_sentinel";
+  return false;
 }
 
 function didEndTutorial(taskInput, taskIndex, taskOutput) {
