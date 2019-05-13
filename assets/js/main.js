@@ -359,8 +359,8 @@ function mturkSubmit(submitUrl, results) {
 	console.log(state.assignmentId);
 	console.log(state.workerId);
 
-    $("#submit-form").attr("action", submitUrl); 
-    $("#submit-form").attr("method", "POST"); 
+    //$("#submit-form").attr("action", submitUrl); 
+    //$("#submit-form").attr("method", "POST"); 
     // if (DEBUG) {
     //     return;
     // }
