@@ -202,7 +202,7 @@ function addHiddenField(form, name, value) {
 }
 
 function submitHIT() {
-    console.log("submitting1611");
+    console.log("submitting1615");
 
     $("#copy-key-button").click(function() {
         selectText('submit-code');
@@ -265,17 +265,17 @@ function submitHIT() {
     addHiddenField(form, 'workerId', state.workerId);
     addHiddenField(form, 'results', JSON.stringify(payload));
     addHiddenField(form, 'feedback', $("#feedback-input").val());
-	$("#submit-form").attr("action", submitUrl); 
-    $("#submit-form").attr("method", "POST"); 
-    $("#submit-form").submit();
+	//$("#submit-form").attr("action", submitUrl); 
+    //$("#submit-form").attr("method", "POST"); 
+    //$("#submit-form").submit();
 	
 	console.log(form);
 	console.log(state.assignmentId);
 	console.log(state.workerId);
 
-    $("#submit-button").removeClass("loading");
-    generateMessage("positive", "Thanks! Your task was submitted successfully.");
-    $("#submit-button").addClass("disabled");
+    //$("#submit-button").removeClass("loading");
+    //generateMessage("positive", "Thanks! Your task was submitted successfully.");
+    //$("#submit-button").addClass("disabled");
 	
 	key = "mturk_key_" + state.workerId + "_" + state.assignmentId+"_"+new Date().getTime();
     showSubmitKey(key);
