@@ -1,0 +1,15 @@
+{
+    "hitCreation": {
+        "production": false,
+        "taskUrl": "https://smalpica.github.io/",
+        "title": "HIT Title", 
+        "description": "HIT description",
+        "numTasks": 5, 
+        "numAssignments": 10,
+        "rewardAmount": "0.00",
+        "keywords": "put, some, keywords, here",
+        "duration": 12000,
+        "lifetime": 16400
+    }, 
+    "variants": []
+}

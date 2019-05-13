@@ -140,7 +140,8 @@ function nextTask() {
 				saveTaskData();
 				console.log("Current collected data", state.taskOutputs);
 				trialSurvey.hideTrialSurvey();
-				state.taskIndex++;	
+				//state.taskIndex++;
+					state.taskIndex = 10;
 				state.pressDuringThisTrial=0;
 			}
             updateTask();
