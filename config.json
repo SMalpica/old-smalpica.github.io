@@ -16,7 +16,7 @@
         "images": ["demo_face_sentinels.gif"]
     },
     "advanced": {
-        "includeDemographicSurvey": true,
+        "includeDemographicSurvey": false,
         "hideIfNotAccepted": true,
         "externalSubmit": false,
         "externalSubmitUrl": ""
