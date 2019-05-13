@@ -202,7 +202,7 @@ function addHiddenField(form, name, value) {
 }
 
 function submitHIT() {
-    console.log("submitting1533");
+    console.log("submitting1611");
 
     $("#copy-key-button").click(function() {
         selectText('submit-code');
@@ -260,6 +260,7 @@ function submitHIT() {
 	
 	
 	console.log("results", results);
+	var form = $("#submit-form");
 	addHiddenField(form, 'assignmentId', state.assignmentId);
     addHiddenField(form, 'workerId', state.workerId);
     addHiddenField(form, 'results', JSON.stringify(payload));
