@@ -50,14 +50,14 @@ var demoSurvey = {
                         type: 'checked',
                         prompt: 'Please select an education level'
                     }]
-                }, 
-                vizExperience: {
-                    identifier: 'vizExperience',
-                    rules: [{
-                        type: 'checked',
-                        prompt: 'Please select your experience with visualizations'
-                    }]
-                }
+                }//, 
+                //vizExperience: {
+                //    identifier: 'vizExperience',
+                //    rules: [{
+                //        type: 'checked',
+                //        prompt: 'Please select your experience with visualizations'
+                //    }]
+                //}
             }
         });
 
@@ -77,16 +77,22 @@ var demoSurvey = {
 	    var ageGroup = $("input[type=radio][name=ageGroup]:checked").val();
 	    var ethnicity = $("input[type=checkbox][name=ethnicity]:checked").val();
 	    var education = $("input[type=radio][name=education]:checked").val();
-	    var vizExperience = $("input[type=radio][name=vizExperience]:checked").val();
-	    var feedback = htmlEscape($("textarea[name=feedback]").val());
+	    //var vizExperience = $("input[type=radio][name=vizExperience]:checked").val();
+	    var time = htmlEscape($("textarea[name=time]").val());
+		var difference = htmlEscape($("textarea[name=difference]").val());
+		var purpose = htmlEscape($("textarea[name=purpose]").val());
+		var feedback = htmlEscape($("textarea[name=feedback]").val());
 
 	    var data = {
 	        gender: gender,
 	        ageGroup: ageGroup,
 	        ethnicity: ethnicity,
 	        education: education,
-	        vizExperience: vizExperience,
-	        feedback: feedback
+	        //vizExperience: vizExperience,
+	        feedback: feedback,
+			time: time,
+			difference: difference,
+			purpose: purpose
 	    }; 
 
         return {
