@@ -291,6 +291,7 @@ function gup(name) {
     var regexS = "[\\?&]"+name+"=([^&#]*)";
     var regex = new RegExp( regexS );
     var tmpURL = window.location.href;
+	console.log("gup window location: ",window.location,", gup href: ",tmpURL);
     var results = regex.exec( tmpURL );
     if (results == null) return "";
     else return results[1];
