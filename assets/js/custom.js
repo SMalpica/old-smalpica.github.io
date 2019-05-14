@@ -4,8 +4,8 @@
 var PARAMS = {
   ENABLE_MSEC_SET_URL: false, // enables setting image display time in the url like so: '?msecImg=1000'
   NUM_MSEC_CROSS: 750, // how long the fixation cross is shown for
-  //NUM_MSEC_IMAGE: 2000, // num milliseconds to show each image for
-  NUM_MSEC_IMAGE: 200, // num milliseconds to show each image for
+  NUM_MSEC_IMAGE: 2000, // num milliseconds to show each image for
+  //NUM_MSEC_IMAGE: 200, // num milliseconds to show each image for
   NUM_MSEC_SENTINEL: 750, // how long a sentinel image is shown for
   NUM_MSEC_CHAR: 400, // how long the code chart is shown
 
