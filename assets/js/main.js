@@ -211,7 +211,7 @@ function submitHIT() {
 	//const MTURK_SUBMIT = "https://www.mturk.com/mturk/externalSubmit";
 	//const SANDBOX_SUBMIT = "https://workersandbox.mturk.com/mturk/externalSubmit";
 	
-	var submitUrl = "https://workersandbox.mturk.com/mturk/externalSubmit";
+	var submitUrl = "https://www.mturk.com/mturk/externalSubmit";
 	console.log("submitUrl", submitUrl);
 	
     saveTaskData();

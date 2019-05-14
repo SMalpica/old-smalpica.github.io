@@ -1,7 +1,7 @@
 {
     "meta": {
-        "title": "Experiment Title",
-        "description": "desc",
+        "title": "Outdoor scenes",
+        "description": "Find the outdoor scenes in several blocks of images",
         "numSubtasks": 3,
         "disclaimer": "This is a disclaimer. You are participating in this experiment voluntarily.",
         "aggregate": false
@@ -16,13 +16,13 @@
         "images": []
     },
     "hitCreation": {
-        "title": "HIT Title",
-        "description": "HIT description",
-        "numTasks": 5,
-        "numAssignments": 100,
-        "rewardAmount": "0.00",
-        "keywords": "these, are, your, HIT, tags",
-        "duration": 1200,
+        "title": "Outdoor scenes",
+        "description": "Find the outdoor scenes in several blocks of images",
+        "numTasks": 10,
+        "numAssignments": 1,
+        "rewardAmount": "2.00",
+        "keywords": "outdoor, detection, images, 2D, outlier",
+        "duration": 720,
         "lifetime": 86400,
         "taskUrl": "https://smalpica.github.io/",
         "variants": []
