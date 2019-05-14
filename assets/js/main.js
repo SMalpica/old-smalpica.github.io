@@ -110,7 +110,7 @@ function nextTask() {
             //failedValidation = custom.validateTask(getTaskInputs(state.taskIndex), state.taskIndex, getTaskOutputs(state.taskIndex));
 			if(state.imageIndex==15 && state.blockIndex==1){
 				console.log("end of trial validation, press detected: ", state.pressDuringThisTrial)
-				if(state.pressDuringThisTrial==0){
+				if(state.taskIndex<3 && state.pressDuringThisTrial==0){
 					failedValidation=true;
 					failedValidation.errorMessage="Didn't find outliers in both blocks";
 					generateMessage("negative", failedValidation.errorMessage);
@@ -447,6 +447,7 @@ $(document).ready(function() {
         });
 		$(document).keypress(function(e){							//CUSTOM TRACK OF KEY PRESSES
 			var pressT=(String.fromCharCode(e.which)=="t" ? 1 : 0);
+			pressT=true;
 			//if(pressT) console.log("T press detected")
 			//	else console.log("press detected",e.which)
 			
@@ -462,7 +463,8 @@ $(document).ready(function() {
 				  taskIndex: state.taskIndex,
 				  blockIndex: state.blockIndex,
 				  imageIndex: state.imageIndex,
-				  outlierTime: new Date().getTime()
+				  outlierTime: new Date().getTime(),
+				  keyPressed: e.which
 				  //outlier: state.taskInputs[taskIndex]
 				};
 				state.outlierNumber++;
