@@ -5,6 +5,7 @@ var demoSurvey = {
 	        $('#demo-survey').load("assets/html/demo_survey.html");
 	        $('#demo-survey').hide();
 	        $('#feedback-field').hide();
+			console.log("demosurvey loaded")
 	    }
 	},
 	hideSurvey: function() {

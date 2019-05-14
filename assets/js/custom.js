@@ -345,7 +345,7 @@ function showImage(taskInput, taskIndex, imageIndex, blockIndex, taskOutput) {
   //console.log("show image",taskIndex,blockIndex,imageIndex)
   $('.subtask').hide();
   $("#next-button").hide();
-  console.log("task index: ",taskIndex);
+  //console.log("task index: ",taskIndex);
   var imgFile = IMAGES[taskIndex*PARAMS.NUM_IMGS_BLOCK*2+blockIndex*PARAMS.NUM_IMGS_BLOCK+imageIndex].src;
   //console.log(imgFile)
   $("#img-main").attr("src", imgFile);
@@ -361,14 +361,14 @@ function showImage(taskInput, taskIndex, imageIndex, blockIndex, taskOutput) {
 		  $("#next-button").show();
 		  $('.subtask').hide();
 		  if(blockIndex==0){
-			  console.log("nextBlock")
+			  //console.log("nextBlock")
 			  
 			  $("#next-button").text("Next block!");
 		  }
 		  else{
 			  $("#next-button").text("Continue");
 			  trialSurvey.showTrialSurvey();
-			  console.log("nextTrial")
+			  //console.log("nextTrial")
 		  }
 	  },PARAMS.NUM_MSEC_IMAGE);	  
   }
