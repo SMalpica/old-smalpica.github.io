@@ -1,15 +1,36 @@
 {
+    "meta": {
+        "title": "Experiment Title",
+        "description": "desc",
+        "numSubtasks": 3,
+        "disclaimer": "This is a disclaimer. You are participating in this experiment voluntarily.",
+        "aggregate": false
+    },
+    "instructions": {
+        "simple": "These are simple instructions for <b>3</b> tasks",
+        "steps": [
+            "instruction1",
+            "instruction2",
+            "instruction3"
+        ],
+        "images": []
+    },
     "hitCreation": {
-        "production": false,
-        "taskUrl": "https://smalpica.github.io/",
-        "title": "HIT Title", 
+        "title": "HIT Title",
         "description": "HIT description",
-        "numTasks": 5, 
-        "numAssignments": 10,
+        "numTasks": 5,
+        "numAssignments": 100,
         "rewardAmount": "0.00",
-        "keywords": "put, some, keywords, here",
-        "duration": 12000,
-        "lifetime": 16400
-    }, 
-    "variants": []
+        "keywords": "these, are, your, HIT, tags",
+        "duration": 1200,
+        "lifetime": 86400,
+        "taskUrl": "https://smalpica.github.io/",
+        "variants": []
+    },
+    "advanced": {
+        "includeDemographicSurvey": false,
+        "hideIfNotAccepted": false,
+        "externalSubmit": false,
+        "externalSubmitUrl": ""
+    }
 }
