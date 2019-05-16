@@ -18,11 +18,11 @@
     "hitCreation": {
         "title": "Outdoor scenes",
         "description": "Find the outdoor scenes in several blocks of images",
-        "numTasks": 10,
+        "numTasks": 30,
         "numAssignments": 1,
         "rewardAmount": "2.00",
         "keywords": "outdoor, detection, images, 2D, outlier",
-        "duration": 720,
+        "duration": 4000,
         "lifetime": 86400,
         "taskUrl": "https://smalpica.github.io/",
         "variants": []
